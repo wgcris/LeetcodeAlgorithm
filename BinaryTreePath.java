@@ -33,6 +33,11 @@ public class BinaryTreePath {
 		return res;
         	
 	} 
+	/**
+	 * 典型的深度优先算法，回溯法
+	 * @param node
+	 * @param path
+	 */
 	
 	public static void findpath(TreeNode node,String path){
 		if(node.left==null && node.right==null) res.add(path);

@@ -1,4 +1,4 @@
-package com.wg.leetcode;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -8,7 +8,17 @@ import java.util.Queue;
  *    思路： 利用递归                
  */
 public class InvertBinaryTree {
-        public static TreeNode invertTree(TreeNode root){
+        
+	class TreeNode{
+		int val;
+		TreeNode left;
+		TreeNode right;
+		public TreeNode(int x){
+			this.val=x;
+		}
+	}
+
+	public static TreeNode invertTree(TreeNode root){
         	if(root==null) return null;
         	if(root.left==null && root.right==null) return root;
       
@@ -41,12 +51,4 @@ public class InvertBinaryTree {
         }
 }
 
-class TreeNode{
-	int val;
-	TreeNode left;
-	TreeNode right;
-	public TreeNode(int x){
-		this.val=x;
-	}
-}
 
